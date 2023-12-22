@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparateur d'Itinéraire avec Leaflet</title>
+    <!-- Inclure les fichiers de Leaflet -->
+    <link rel="stylesheet" href="leaflet/leaflet.css">
+    <script src="leaflet/leaflet.js"></script>
+    <!-- Ajouter le lien vers le fichier CSS si tu veux appliquer des styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="navbar-left">
+                <span class="brand">WeMaps</span>
+            </div>
+            <div class="navbar-right">
+                <a href="#" class="contact-button">Contacter</a>
+            </div>
+        </nav>
+    </header>
+
+    <h1>COMPARATEUR D'ITINERAIRES</h1>
+    <form>
+        <label for="start">D'où :</label>
+        <input type="text" id="start" name="start" required>
+
+        <label for="destination">Destination :</label>
+        <input type="text" id="destination" name="destination" required>
+
+        <button type="button" onclick="compareItineraries()">Comparer</button>
+    </form>
+
+    <!-- Liste d'itinéraires prédéfinis -->
+    <div class="itineraries">
+        <!-- <h2 style="text-align: center;">Précédants</h2> -->
+        <ul id="itinerary-list">
+            <li class="itinerary" onclick="showItinerary('Montpellier - Paris')">Montpellier - Paris</li>
+            <li class="itinerary" onclick="showItinerary('Marseille - Toulouse')">Marseille - Toulouse</li>
+            <!-- Ajoute d'autres itinéraires ici -->
+        </ul>
+    </div>
+
+    <!-- Ajouter un conteneur pour la carte -->
+    <div id="map" style="height: 400px;"></div>
+
+    <footer>
+        <div class="copyright">
+            &copy; 2023 Prince160. Tous droits réservés.
+        </div>
+    </footer>
+
+    <!-- Ajouter le lien vers le fichier JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

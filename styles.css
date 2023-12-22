@@ -1,0 +1,150 @@
+/* Styles pour l'en-tête (nav) */
+header {
+    background: linear-gradient(to right, #000000, #2ecc71); /* Dégradé noir à vert clair */
+    padding: 10px 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    color: #ffffff; /* Texte blanc */
+    font-size: 1.5em;
+}
+
+.navbar-right {
+    text-align: right;
+}
+
+.contact-button {
+    padding: 10px 20px;
+    background-color: #ffffff; /* Fond blanc */
+    color: #2ecc71; /* Texte vert clair */
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.contact-button:hover {
+    background-color: #2ecc71; /* Fond vert clair au survol */
+    color: #ffffff; /* Texte blanc au survol */
+}
+
+/* Styles pour le pied de page (footer) */
+footer {
+    background-color: #000000; /* Fond noir */
+    color: #ffffff; /* Texte blanc */
+    padding: 10px 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    /* width: %; */
+    /* height: 50px; */
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f8f8f8; /* Blanc pâle */
+}
+
+h1 {
+    text-align: center;
+    color: #3498db; /* Bleu vif */
+    margin-bottom: 20px;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background: linear-gradient(to bottom, #ffffff, #f0f0f0); /* Dégradé blanc à blanc plus foncé */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Légère ombre */
+}
+
+label, input, button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ddd; /* Gris clair */
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Nouvelles règles pour le positionnement des blocs */
+.itineraries-container {
+    float: left;
+    margin-top: 20px;
+    width: 50%; /* Ajustez la largeur selon vos préférences */
+    padding: 10px;
+    background: #f0f0f0; /* Fond gris pâle */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Légère ombre */
+}
+
+.compare-container {
+    float: right;
+    margin-top: 20px;
+    width: 50%; /* Ajustez la largeur selon vos préférences */
+    padding: 10px;
+    background: linear-gradient(to bottom, #ffffff, #f0f0f0); /* Dégradé blanc à blanc plus foncé */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Légère ombre */
+}
+
+/* Styles pour rendre les liens cliquables modernes */
+#itinerary-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.itinerary {
+    cursor: pointer;
+    color: #3498db; /* Bleu vif */
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 5px;
+    display: block;
+    margin-bottom: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    text-align: center;
+}
+
+.itinerary:hover {
+    background-color: #3498db; /* Bleu vif au survol */
+    color: #fff; /* Texte blanc au survol */
+}
+
+#map-container {
+    margin-top: 20px;
+    height: 400px;
+}
+
+.map-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Diviser la carte en deux colonnes */
+    grid-gap: 10px; /* Espacement entre les colonnes */
+}
+
+/* Styles pour rendre la carte cadrillée */
+#map {
+    border: 1px solid #ddd; /* Bordure gris clair */
+    border-radius: 10px;
+}
